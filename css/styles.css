@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+
+}
+
+.grid-container div {
+  padding: 5px;
+  font-size: 15px;
+  font-family: Helvetica;
+  font-weight: bold;
+  color: white;
+}
+
+.header {
+  background-color: #393f4d;
+  grid-column: 2 / 6;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.header-div1 {
+  grid-column: 1/5;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.header-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  /* align-items: center; */
+}
+
+
+
+.sidebar {
+  background-color: #729ff3;
+  grid-row: 1/6;
+}
+
+/* GOOGLE MATERIAL ICONS STYLE */
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
